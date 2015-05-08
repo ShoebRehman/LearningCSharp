@@ -34,7 +34,6 @@ namespace AreaApplication
 	
 	class ExecuteProgram{
 		static void Main(string[] args){
-<<<<<<< HEAD
 			Console.WriteLine("Welcome to my program!\nWould you like to use the constructor or no?");
 			char ans;
 
@@ -56,19 +55,6 @@ namespace AreaApplication
 				Rectangle f = new Rectangle(l, w);
 				f.DisplayValues();
 			}
-=======
-			Rectangle r = new Rectangle();
-			r.getDimensions();
-			r.DisplayValues();
-			
-			double l, w;
-			Console.WriteLine("Please enter the Length");
-			l = double.Parse(Console.ReadLine());
-			Console.WriteLine("Please enter the Width");
-			w = double.Parse(Console.ReadLine());
-			Rectangle f = new Rectangle(l, w);
-			f.DisplayValues();
->>>>>>> 9b5825db7501c5365a8b0083585a5447122a52c6
 		}
 	}
 			
