@@ -55,7 +55,8 @@ namespace AreaApplication
 				Rectangle f = new Rectangle(l, w);
 				f.DisplayValues();
 			}
-		}
+            Console.ReadLine();
+        }
 	}
 			
 		
