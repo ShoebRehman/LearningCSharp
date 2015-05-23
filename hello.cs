@@ -20,12 +20,12 @@ namespace AreaApplication
 			  return length*width;
 			  }
 		public void DisplayValues(){
-			Console.WriteLine("The Length is: {0}", length);
-			Console.WriteLine("The Width is: {0}", width);
+			Console.WriteLine("The Length is: " + length);
+			Console.WriteLine("The Width is: " + width);
 			Console.WriteLine("The Area of the rectangle is: {0}", returnArea());
 			return;
 		}
-		public Rectangle(double l, double w){
+		public Rectangle(double l, double w){ //Constructor Practice, takes length and width
 			length = l;
 			width = w;
 		}
