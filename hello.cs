@@ -26,7 +26,6 @@ namespace AreaApplication
                       Console.WriteLine("Your input is a non-positive integer. Please try again.");
                   }
               } while (width < 0);
-              width = double.Parse(Console.ReadLine());
 			  return;
 		  }
 		  public double returnArea(){
@@ -35,7 +34,7 @@ namespace AreaApplication
 		public void DisplayValues(){
 			Console.WriteLine("The Length is: " + length);
 			Console.WriteLine("The Width is: " + width);
-			Console.WriteLine("The Area of the rectangle is: {0}", returnArea());
+			Console.WriteLine("The Area of the rectangle is: {0:#,##0.00}", returnArea());
 			return;
 		}
 		public Rectangle(double l, double w){ //Constructor Practice, takes length and width
