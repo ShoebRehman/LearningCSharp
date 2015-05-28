@@ -7,13 +7,26 @@ namespace AreaApplication
 		  double width;
 		  
 		  public void getDimensions(){
-			  double l, w;
-			  Console.WriteLine("Please input the length of the rectangle");
-			  l = double.Parse(Console.ReadLine());
-			  length = l;
+			  
+              Console.WriteLine("Please input the length of the rectangle");
+              do{
+                  length = double.Parse(Console.ReadLine());
+                  if (length < 0)
+                  {
+                      Console.WriteLine("Your input is a non-positive integer. Please try again.");
+                  }
+              } while (length < 0);
+
 			  Console.WriteLine("Please input the width of the rectangle");
-			  w = double.Parse(Console.ReadLine());
-			  width = w;
+              do
+              {
+                  width = double.Parse(Console.ReadLine());
+                  if (width < 0)
+                  {
+                      Console.WriteLine("Your input is a non-positive integer. Please try again.");
+                  }
+              } while (width < 0);
+              width = double.Parse(Console.ReadLine());
 			  return;
 		  }
 		  public double returnArea(){
@@ -48,10 +61,24 @@ namespace AreaApplication
 			if(ans == 'y'){
 				//Console.WriteLine("Receives user input and then initializes class object through constructor");
 				double l, w;
-				Console.WriteLine("Please enter the Length");
-				l = double.Parse(Console.ReadLine());
+                Console.WriteLine("Please enter the Length");
+                do
+                {
+                    l = double.Parse(Console.ReadLine());
+                    if (l < 0)
+                    {
+                        Console.WriteLine("Your input is a non-positive integer. Please try again.");
+                    }
+                } while (l < 0);
 				Console.WriteLine("Please enter the Width");
-				w = double.Parse(Console.ReadLine());
+                do
+                {
+                    w = double.Parse(Console.ReadLine());
+                    if (w < 0)
+                    {
+                        Console.WriteLine("Your input is a non-positive integer. Please try again.");
+                    }
+                } while (w < 0);
 				Rectangle f = new Rectangle(l, w);
 				f.DisplayValues();
 			}
