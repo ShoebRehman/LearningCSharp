@@ -1,4 +1,7 @@
 using System;
+using System.Data;
+using System.Data.SqlClient;
+
 namespace AreaApplication
 {
    class Rectangle
@@ -6,6 +9,7 @@ namespace AreaApplication
 		  double length;
 		  double width;
 		  
+          SqlConnection myConnection = new SqlConnection("server = ")
 		  public void getDimensions(){
 			  
               Console.WriteLine("Please input the length of the rectangle");
@@ -124,10 +128,11 @@ namespace AreaApplication
             }
             Console.ReadLine();
             return;
+
+
         }
 	}
 			
-		
 		
 		
 		 
